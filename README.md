@@ -19,10 +19,14 @@ Add the plugin to your rollup config:
 import images from 'rollup-plugin-image-files';
 
 export default {
-  entry: 'src/index.js',
-  des: 'dist/bundle.js',
-  plugins: [images()]
-}
+	entry: 'src/index.js',
+	des: 'dist/bundle.js',
+	plugins: [
+		images({
+			output: 'build/images'
+		})
+	]
+};
 ```
 
 Require some images in your source:
@@ -33,7 +37,7 @@ import { Image } from 'react-native';
 import imageSrc from '../path/to/image.png';
 
 export default const MyComponent = () => (
-  <Image source={imageSrc}/>
+  <img src={imageSrc} alt='' />
 );
 ```
 
