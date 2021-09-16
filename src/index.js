@@ -15,7 +15,7 @@ const getHash = content => {
 };
 
 const generateFileNameWithHash = (basename, extname, hash) => {
-	return `${basename}-${hash}.${extname}`.replace('..', '.');
+	return `${basename}_${hash}.${extname}`.replace('..', '.');
 };
 
 export default function image(options = {}) {
