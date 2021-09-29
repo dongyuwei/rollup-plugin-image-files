@@ -1,22 +1,24 @@
-# rollup-plugin-image-files
+# rollup-plugin-images
 
-![Build Status](https://github.com/bspaulding/rollup-plugin-image-files/workflows/Node%20CI/badge.svg)
+Forked from [rollup-plugin-image-files](https://github.com/bspaulding/rollup-plugin-image-files)
 
-Like rollup-plugin-image, but writes image files to dest instead of inlining base64.
-This was written for a library that would be consumed by react-native applications.
+Added the following enhancements:
+
+- supports custom output directory for images.
+- copy and rename image with hash: `[name]_[md5hash].[extname]`.
 
 ## Usage
 
 Install the plugin via npm:
 
 ```bash
-npm install --save-dev rollup-plugin-image-files
+npm install --save-dev rollup-plugin-images
 ```
 
 Add the plugin to your rollup config:
 
 ```javascript
-import images from 'rollup-plugin-image-files';
+import images from 'rollup-plugin-images';
 
 export default {
 	entry: 'src/index.js',
@@ -40,10 +42,3 @@ export default const MyComponent = () => (
   <img src={imageSrc} alt='' />
 );
 ```
-
-## What it does
-
-The plugin does two things:
-
-1. Copies the source image into the same directory as the destination file.
-2. Replaces the image required with a module that exports the result of calling require on the copied image.
