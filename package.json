@@ -1,5 +1,5 @@
 {
-  "name": "rollup-plugin-images",
+  "name": "rollup-plugin-image-assets",
   "version": "1.0.0",
   "description": "Like rollup-plugin-image, but copy image files to dest instead of inlining base64.",
   "main": "dist/index.cjs.js",

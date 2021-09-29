@@ -1,4 +1,4 @@
-# rollup-plugin-images
+# rollup-plugin-image-assets
 
 Forked from [rollup-plugin-image-files](https://github.com/bspaulding/rollup-plugin-image-files)
 
@@ -12,13 +12,13 @@ Added the following enhancements:
 Install the plugin via npm:
 
 ```bash
-npm install --save-dev rollup-plugin-images
+npm install --save-dev rollup-plugin-image-assets
 ```
 
 Add the plugin to your rollup config:
 
 ```javascript
-import images from 'rollup-plugin-images';
+import images from 'rollup-plugin-image-assets';
 
 export default {
 	entry: 'src/index.js',

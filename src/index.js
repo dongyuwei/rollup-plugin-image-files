@@ -42,7 +42,7 @@ export default function image(options = {}) {
 	}
 
 	return {
-		name: 'image-file2',
+		name: 'image-assets',
 		load(image) {
 			if ('string' !== typeof image || !filter(image)) {
 				return null;
