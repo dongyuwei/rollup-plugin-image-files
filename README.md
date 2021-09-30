@@ -6,6 +6,7 @@ Added the following enhancements:
 
 - supports custom output directory for images.
 - copy and rename image with hash: `[name]_[md5hash].[extname]`.
+- It even supports copy mp3/wav/mp4 assets :), just config the `extensions`.
 
 ## Usage
 
@@ -25,6 +26,7 @@ export default {
 	des: 'dist/bundle.js',
 	plugins: [
 		images({
+			extensions: ['.jpg', '.jpeg', '.png', '.gif', '.svg',   '.mp3', '.wav']
 			output: 'build/images'
 		})
 	]
