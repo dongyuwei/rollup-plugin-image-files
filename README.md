@@ -6,7 +6,7 @@ Added the following enhancements:
 
 - supports custom output directory for images.
 - copy and rename image with hash: `[name]_[md5hash].[extname]`.
-- It even supports copy mp3/wav/mp4 assets :), just config the `extensions`.
+- It even supports copy other assets like mp3/wav/mp4 :), just config the `extensions`.
 
 ## Usage
 
@@ -37,8 +37,7 @@ Require some images in your source:
 
 ```javascript
 import React from 'react';
-import { Image } from 'react-native';
-import imageSrc from '../path/to/image.png';
+import imageSrc from './images/foo.png';
 
 export default const MyComponent = () => (
   <img src={imageSrc} alt='' />
