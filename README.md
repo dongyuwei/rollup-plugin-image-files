@@ -1,4 +1,5 @@
 # rollup-plugin-image-assets
+Like rollup-plugin-image, but writes image files to dest instead of inlining base64. 
 
 Forked from [rollup-plugin-image-files](https://github.com/bspaulding/rollup-plugin-image-files)
 
